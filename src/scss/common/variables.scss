@@ -1,21 +1,8 @@
 :root {
   --color-primary: hsl(220, 90%, 56%);
+  --color-grey: #666666;
 }
 
-/* Main Colors */
-$color-base:#fff;
-$color-bg:$color-base;
-$color-text:#000;
-$color-link:inherit;
-$color-link-hover:inherit;
-$color-pink: #ff5a75;
-
-/* Fonts */
-$font-family:"Lato", sans-serif;
-$font-size:10px;
-$font-weight:normal;
-$letter-spacing:normal;
-$line-height:125%;
 
 /* Screen sizes */
 $screen-s:360px;

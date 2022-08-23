@@ -32,7 +32,7 @@ gulp.task('deploy', function() {
 
 /* Html task */
 gulp.task('html', () => {
-    return gulp.src(['./src/pages/*.html', '!./src/pages/_includes/**/*'])
+    return gulp.src(['./src/distr/*.html', '!./src/distr/_includes/**/*'])
         .pipe(plumber())
         .pipe(fileInclude({
             prefix: '@',
@@ -45,7 +45,7 @@ gulp.task('html', () => {
 
 /* Sass task */
 gulp.task('sass', () => {
-    return gulp.src('./src/scss/main.scss')
+    return gulp.src('./src/scss/style.scss')
         .pipe(sass({
             "includePaths": "node_modules"
         }))
@@ -103,7 +103,7 @@ gulp.task('watch', () => {
     global.isWatching = true;
 
     gulp.watch("./src/scss/**/*.scss", gulp.series('sass'));
-    gulp.watch("./src/pages/**/*.html", gulp.series('html'));
+    gulp.watch("./src/distr/**/*.html", gulp.series('html'));
     gulp.watch("./src/js/**/*.*", gulp.series('js'));
     gulp.watch("./config.json", gulp.parallel('html', 'js'));
 });
