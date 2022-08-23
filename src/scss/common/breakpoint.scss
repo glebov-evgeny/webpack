@@ -1,82 +1,82 @@
 // Max width
-@mixin w {
+@mixin size_1900 {
     @media only screen and (max-width: $screen-w-max) {
         @content;
     }
 }
-@mixin x {
+@mixin size_1600 {
     @media only screen and (max-width: $screen-x-max) {
         @content;
     }
 }
-@mixin d {
+@mixin size_1350 {
     @media only screen and (max-width: $screen-d-max) {
         @content;
     }
 }
-@mixin t {
+@mixin size_1200 {
     @media only screen and (max-width: $screen-t-max) {
         @content;
     }
 }
-@mixin n {
+@mixin size_992 {
     @media only screen and (max-width: $screen-n-max) {
         @content;
     }
 }
-@mixin m {
+@mixin size_768 {
     @media only screen and (max-width: $screen-m-max) {
         @content;
     }
 }
-@mixin a {
+@mixin size_576 {
     @media only screen and (max-width: $screen-a-max) {
         @content;
     }
 }
-@mixin s {
+@mixin size_360 {
     @media only screen and (max-width: $screen-s-max) {
         @content;
     }
 }
 
 // Min width
-@mixin _w {
+@mixin _size_1900 {
     @media only screen and (min-width: $screen-w-min) {
         @content;
     }
 }
-@mixin _x {
+@mixin _size_1600 {
     @media only screen and (min-width: $screen-x-min) {
         @content;
     }
 }
-@mixin _d {
+@mixin _size_1350 {
     @media only screen and (min-width: $screen-d-min) {
         @content;
     }
 }
-@mixin _t {
+@mixin _size_1200 {
     @media only screen and (min-width: $screen-t-min) {
         @content;
     }
 }
-@mixin _n {
+@mixin _size_992 {
     @media only screen and (min-width: $screen-n-min) {
         @content;
     }
 }
-@mixin _m {
+@mixin _size_768 {
     @media only screen and (min-width: $screen-m-min) {
         @content;
     }
 }
-@mixin _a {
+@mixin _size_576 {
     @media only screen and (min-width: $screen-a-min) {
         @content;
     }
 }
-@mixin _s {
+@mixin _size_360 {
     @media only screen and (min-width: $screen-s-min) {
         @content;
     }

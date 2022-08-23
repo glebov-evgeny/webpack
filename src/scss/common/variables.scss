@@ -1,27 +1,27 @@
+:root {
+  --color-primary: hsl(220, 90%, 56%);
+}
+
 /* Main Colors */
 $color-base:#fff;
-$color-graybase:#000;
-
-$color-primary:#43ABF0;
-$color-secondary:#272733;
-
 $color-bg:$color-base;
 $color-text:#000;
 $color-link:inherit;
 $color-link-hover:inherit;
+$color-pink: #ff5a75;
 
 /* Fonts */
 $font-family:"Lato", sans-serif;
-$font-size:18px;
+$font-size:10px;
 $font-weight:normal;
 $letter-spacing:normal;
-$line-height:1.2;
+$line-height:125%;
 
 /* Screen sizes */
 $screen-s:360px;
-$screen-a:768px;
-$screen-m:992px;
-$screen-n:1024px;
+$screen-a:576px;
+$screen-m:768px;
+$screen-n:992px;
 $screen-t:1200px;
 $screen-d:1350px;
 $screen-x:1600px;

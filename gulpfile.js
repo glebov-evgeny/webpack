@@ -1,12 +1,3 @@
-/*!
- * Gulp SMPL Layout Builder
- *
- * @version 1.0.0
- * @author HubCrag
- * @type Module gulp
- * @license The MIT License (MIT)
- */
-
 /* Get plugins */
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
@@ -19,10 +10,6 @@ const del = require('del');
 const webpack = require('webpack-stream');
 const ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
-    .pipe(ghPages());
-});
 
 /* Primary tasks */
 gulp.task('default', (done) => {
@@ -37,13 +24,15 @@ gulp.task('build', (done) => {
     gulp.series('clean', gulp.parallel('html', 'sass', 'js', 'static', 'svgSprite'), 'browsersync', 'watch')(done)
 });
 
-gulp.task('deploy', (done) => {
-    gulp.series('clean', gulp.parallel('html', 'sass', 'js', 'static', 'svgSprite'), 'browsersync', 'watch')(done)
+gulp.task('deploy', function() {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages());
 });
+
 
 /* Html task */
 gulp.task('html', () => {
-    return gulp.src(['./src/partials/*.html', '!./src/partials/_includes/**/*'])
+    return gulp.src(['./src/pages/*.html', '!./src/pages/_includes/**/*'])
         .pipe(plumber())
         .pipe(fileInclude({
             prefix: '@',
@@ -114,7 +103,7 @@ gulp.task('watch', () => {
     global.isWatching = true;
 
     gulp.watch("./src/scss/**/*.scss", gulp.series('sass'));
-    gulp.watch("./src/partials/**/*.html", gulp.series('html'));
+    gulp.watch("./src/pages/**/*.html", gulp.series('html'));
     gulp.watch("./src/js/**/*.*", gulp.series('js'));
     gulp.watch("./config.json", gulp.parallel('html', 'js'));
 });

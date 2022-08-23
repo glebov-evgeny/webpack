@@ -2,4 +2,5 @@
 /node_modules
 
 .idea
+.publish
 package-lock.json
