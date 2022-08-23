@@ -340,3 +340,13 @@ select {
 ::-webkit-scrollbar {
     width: .6rem;
 }
+
+
+.container {
+    max-width: 150rem;
+    padding:0 1.5rem;
+    margin: 0 auto;
+    @include _size_768 {
+        padding:0 2.5rem;
+    }
+}
