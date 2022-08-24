@@ -4,6 +4,7 @@
 	"author": "egoji@mail.ru",
 	"contributors": [],
 	"dependencies": {
+		"gulp-rename": "^2.0.0",
 		"gulp-svg-sprite": "^1.5.0",
 		"smooth-scrollbar": "^8.7.0"
 	},
@@ -25,6 +26,7 @@
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-file-include": "^2.3.0",
 		"gulp-gh-pages": "^0.5.4",
+		"gulp-load-plugins": "^2.0.7",
 		"gulp-plumber": "^1.2.1",
 		"gulp-sass": "^5.0.0",
 		"imports-loader": "^0.8.0",

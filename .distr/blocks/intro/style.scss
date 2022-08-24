@@ -1,0 +1,9 @@
+.intro{
+  min-height: 2000px;
+ background: grey;
+ // background: url('../intro/img/slider_5.jpg') center center no-repeat;
+  background-size: cover;
+  &__title{
+    margin-top: 10rem;
+  }
+}
